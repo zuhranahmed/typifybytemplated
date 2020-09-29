@@ -1,0 +1,230 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5%; }
+  @media screen and (max-width: 700px) {
+    html {
+      font-size: 55%; } }
+  @media screen and (max-width: 500px) {
+    html {
+      font-size: 45%; } }
+
+body {
+  font-size: 1.6rem;
+  font-family: "Open Sans", sans-serif;
+  color: #fff; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+ul {
+  list-style: none; }
+
+.header {
+  height: 80vh;
+  background-color: #00cec9;
+  text-align: center;
+  padding: 15rem 5rem;
+  text-transform: uppercase; }
+  @media screen and (max-width: 500px) {
+    .header {
+      padding: 10rem 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; } }
+  .header .container {
+    max-width: 800px;
+    margin: 0 auto; }
+  .header .white-top {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-bottom: 2.5px; }
+  .header__heading {
+    text-align: center;
+    padding: 7.5rem 5rem;
+    border: 1px solid #fff; }
+    @media screen and (max-width: 500px) {
+      .header__heading {
+        padding: 5rem 2.5rem; } }
+    .header__heading--h1 {
+      font-size: 4.2rem;
+      font-weight: 300; }
+      .header__heading--h1 span {
+        font-weight: 600; }
+  .header .white-bottom {
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+    margin-top: 2.5px;
+    margin-bottom: 5rem; }
+  .header__details {
+    margin-bottom: 7.55rem; }
+    .header__details--p {
+      font-size: 2.8rem;
+      font-weight: 300; }
+  .header__button--cta {
+    padding: 1rem 2.5rem;
+    font-size: 2.2rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    background-color: rgba(51, 51, 51, 0.4);
+    display: inline-block; }
+
+.services {
+  color: #333; }
+  .services__container {
+    max-width: 1200px;
+    margin: 10rem auto;
+    padding: 0 5rem; }
+    @media screen and (max-width: 500px) {
+      .services__container {
+        margin: 7.5rem auto;
+        padding: 0 2.5rem; } }
+  .services__heading {
+    margin-bottom: 5rem;
+    font-size: 3.4rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; }
+  .services__cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 1rem; }
+    @media screen and (max-width: 700px) {
+      .services__cards {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media screen and (max-width: 500px) {
+      .services__cards {
+        grid-template-columns: 1fr; } }
+  .services__card {
+    padding: 5rem 2.5rem;
+    border: 1px solid rgba(51, 51, 51, 0.4); }
+    @media screen and (max-width: 500px) {
+      .services__card {
+        max-width: 80%;
+        margin: 0 auto;
+        padding: 2.5rem 1.5rem; } }
+    .services__card--icon {
+      margin-bottom: 2.5rem;
+      font-size: 4.2rem;
+      color: #00cec9; }
+    .services__card--heading {
+      font-size: 2.2rem;
+      font-weight: 300;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase; }
+    .services__card--details {
+      font-weight: 300; }
+
+.form {
+  color: #333;
+  background-color: #ececec; }
+  .form__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem 2.5rem;
+    border-bottom: 1px solid rgba(51, 51, 51, 0.8); }
+  .form__heading {
+    margin-bottom: 5rem;
+    font-size: 3.4rem;
+    font-weight: 300;
+    text-align: center;
+    text-transform: uppercase; }
+  .form__content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    color: rgba(51, 51, 51, 0.8); }
+    @media screen and (max-width: 500px) {
+      .form__content {
+        grid-template-columns: 1fr; } }
+    .form__content--data {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      margin-bottom: 2.5rem; }
+      .form__content--data label {
+        margin-bottom: 1.5rem;
+        letter-spacing: 1px; }
+      .form__content--data input {
+        width: 80%;
+        margin: 0 auto;
+        padding: 1rem 0.5rem;
+        outline: none;
+        font-size: 1.8rem;
+        color: rgba(51, 51, 51, 0.8); }
+    .form__content--textarea {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      grid-column: 1 / span 2;
+      margin-bottom: 2.5rem; }
+      @media screen and (max-width: 500px) {
+        .form__content--textarea {
+          grid-column: 1; } }
+      .form__content--textarea label {
+        margin-bottom: 1.5rem;
+        letter-spacing: 1px; }
+      .form__content--textarea textarea {
+        width: 90%;
+        margin: 0 auto;
+        padding: 1rem 0.5rem;
+        outline: none;
+        font-size: 1.8rem;
+        color: rgba(51, 51, 51, 0.8); }
+        @media screen and (max-width: 500px) {
+          .form__content--textarea textarea {
+            width: 80%; } }
+  .form__cta {
+    text-align: center;
+    grid-column: 1 / span 2; }
+    @media screen and (max-width: 500px) {
+      .form__cta {
+        grid-column: 1; } }
+    .form__cta--btn {
+      outline: none;
+      border: none;
+      padding: 1rem 2.5rem;
+      font-size: 1.6rem;
+      color: #fff;
+      letter-spacing: 1px;
+      background-color: #444;
+      display: inline-block;
+      cursor: pointer;
+      text-transform: uppercase; }
+
+.footer {
+  font-weight: 300;
+  font-size: 1.4rem;
+  color: #333;
+  background-color: #ececec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  .footer__container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 5rem 2.5rem; }
+  .footer__copyright {
+    color: rgba(51, 51, 51, 0.6); }
+    .footer__copyright--link {
+      border-bottom: 1px dotted rgba(51, 51, 51, 0.6); }
+  .footer__author {
+    color: rgba(51, 51, 51, 0.6); }
+    .footer__author--link .fa-twitter {
+      margin-right: 0.5rem;
+      transition: all 0.2s; }
+      .footer__author--link .fa-twitter:hover {
+        color: deepskyblue; }
+    .footer__author--link .fa-github {
+      transition: all 0.2s; }
+      .footer__author--link .fa-github:hover {
+        color: #444; }
